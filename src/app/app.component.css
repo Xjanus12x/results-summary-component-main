@@ -1,0 +1,22 @@
+.grid-container {
+  --shadow-opacity: 0.1;
+}
+
+@media screen and (min-width: 700px) {
+  .grid-container {
+    max-width: 60rem;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 50rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 17px 16px 31px -6px hsl(241, 81%, 54%, var(--shadow-opacity));
+    -moz-box-shadow: 17px 16px 31px -6px hsl(241, 81%, 54%, var(--shadow-opacity));
+    box-shadow: 17px 16px 31px -6px hsl(241, 81%, 54%, var(--shadow-opacity));
+  }
+}

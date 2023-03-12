@@ -1,0 +1,14 @@
+<main>
+    <section class="summary">
+        <h3 class="summary__title">Summary</h3>
+        <article class="summary__{{data.category.toLowerCase()}}-score" *ngFor="let data of summaryData">
+            <div class="row">
+                <img [src]="data.icon" alt="">
+                <span class="summary__{{data.category.toLowerCase()}}-score--title">{{data.category}}</span>
+            </div>
+            <p><span>{{data.score}}</span><span> / 100</span></p>
+        </article>
+
+        <button class="button" type="button">Continue</button>
+    </section>
+</main>
