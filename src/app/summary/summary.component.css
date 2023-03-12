@@ -63,6 +63,12 @@
   padding-block: 1rem;
   border-radius: 50vw;
 }
+.button:hover {
+  background-image: linear-gradient(
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+}
 
 @media screen and (min-width: 1000px) {
   .summary {
